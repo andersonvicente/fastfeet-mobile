@@ -1,10 +1,21 @@
 import React from 'react';
-import { View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
-// import { Container } from './styles';
+import { Container, Texto } from './styles';
 
-export default function Profile() {
+export default function Profile({ navigation }) {
   return (
-    <View />
+    <Container>
+      <Texto>
+        Teste
+      </Texto>
+    </Container>
   );
 }
+
+Profile.navigationOptions = {
+  tabBarLabel: 'Meu perfil',
+  tabBarIcon: ({ tintColor }) => (
+    <Icon name="person" size={20} color={tintColor} />
+  ),
+};
