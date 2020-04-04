@@ -1,6 +1,7 @@
+import { Platform } from 'react-native';
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
 
+import Input from '~/components/Input';
 import Button from '~/components/Button';
 
 export const Background = styled.View`
@@ -10,11 +11,32 @@ export const Background = styled.View`
   justify-content: center;
 `;
 
-export const Texto = styled.Text`
-  font-size: 16px;
-  color: #fff;
+export const Container = styled.KeyboardAvoidingView.attrs({
+  enabled: Platform.OS === 'ios',
+  behavior: 'padding',
+})`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+`;
+
+export const Logo = styled.Image`
+  height: 48px;
+  width: 244px;
+  background: #fff;
+`
+
+export const Form = styled.View`
+  align-self: stretch;
+  margin-top: 50px;
+`
+
+export const FormInput = styled(Input)`
+  margin-bottom: 10px;
 `
 
 export const SubmitButton = styled(Button)`
   background: #82BF18;
+  margin-top: 5px;
 `
