@@ -7,7 +7,7 @@ module.exports = {
   extends: [
     'airbnb',
     'prettier',
-    'prettier/react'
+    'prettier/react',
   ],
   globals: {
     Atomics: 'readonly',
@@ -42,7 +42,9 @@ module.exports = {
     camelcase: 'off',
     'no-console': ['error', { allow: ['tron'] }],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-props-no-spreading': 'off',
+    'react/forbid-prop-types': 'off',
   },
   settings: {
     "import/resolver": {

@@ -6,7 +6,7 @@ import Button from '~/components/Button';
 
 export const Background = styled.View`
   flex: 1;
-  background: #7D40E7;
+  background: #7d40e7;
   align-items: center;
   justify-content: center;
 `;
@@ -25,18 +25,18 @@ export const Logo = styled.Image`
   height: 48px;
   width: 244px;
   background: #fff;
-`
+`;
 
 export const Form = styled.View`
   align-self: stretch;
   margin-top: 50px;
-`
+`;
 
 export const FormInput = styled(Input)`
   margin-bottom: 10px;
-`
+`;
 
 export const SubmitButton = styled(Button)`
-  background: #82BF18;
+  background: #82bf18;
   margin-top: 5px;
-`
+`;
